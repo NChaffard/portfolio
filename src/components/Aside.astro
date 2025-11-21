@@ -1,0 +1,23 @@
+---
+import Navigation from "./Navigation.astro";
+---
+
+<aside class="aside-container">
+  <Navigation />
+</aside>
+<style>
+  .aside-container {
+    position: sticky;
+    height: 100dvh;
+    width: 20%;
+    background: #818ca8;
+    background-image: repeating-linear-gradient(
+      45deg /* angle diagonal */,
+      rgba(31, 31, 31, 0.2) /* couleur ligne */,
+      rgba(31, 31, 31, 0.2) 1px /* épaisseur ligne */,
+      transparent 1px ,
+      transparent 6px /* taille tile */
+    );
+    background-size: 8px 8px; /* définit la taille de répétition */
+  }
+</style>
